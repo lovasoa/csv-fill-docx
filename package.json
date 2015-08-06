@@ -1,0 +1,7 @@
+{
+  "name": "csv-fill-template",
+  "dependencies": {
+    "csv-parser": ">=0.1",
+    "docxtemplater": ">=1.0"
+  }
+}
