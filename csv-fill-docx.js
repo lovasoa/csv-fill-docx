@@ -44,4 +44,6 @@ if (process.argv.length < 4) {
 var ifname = process.argv[2];
 var tplname = process.argv[3];
 
-fs.createReadStream(ifname).pipe(csv()).on("data", createFiller(tplname));
+fs.createReadStream(ifname).pipe(csv({
+  separator: ';'
+})).on("data", createFiller(tplname));
